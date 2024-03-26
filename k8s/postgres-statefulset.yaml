@@ -35,7 +35,7 @@ spec:
       spec:
         accessModes:
           - ReadWriteOnce
-        storageClassName: hostpath
+        storageClassName: standard
         resources:
           requests:
-            storage: 5Gi
+            storage: 500Mi

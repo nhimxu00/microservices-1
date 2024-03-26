@@ -14,9 +14,11 @@ spec:
       labels:
         component: api-gateway
     spec:
+      imagePullSecrets:
+        - name: microservice-registry
       containers:
         - name: api-gateway
-          image: 080196/microservice
+          image: registry.gitlab.com/nhimxu00/microservices
           ports:
             - name: http
               containerPort: 3000
