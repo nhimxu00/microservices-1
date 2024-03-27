@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: pv-volume-new
+  name: pv-volume
   labels:
     type: local
 spec:
   capacity:
-    storage: 500Mi
+    storage: 2Gi
   accessModes:
     - ReadWriteOnce
   hostPath:
